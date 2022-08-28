@@ -5,43 +5,59 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.header{
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.firstSection{
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
     flex-direction: column;
-    padding: 20px 100px 80px;
-}
-.topline{
-    display: flex;
-    justify-content: space-between;
+    padding: 20px 50px 60px;
 }
 
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
 
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap:15px;
+    gap:50px;
 }
 
 a {
     text-decoration: none;
     color: #E5E7EB;
-    font-size: 18px;
-
 }
 
-.logo{
-    font-size: 24px;
-    color: #F9FAF8;
-    font-weight: bold;
+a:hover{
+    color: lightcoral;
 }
 
-.maintext{
-    font-size: 48px;
-    font-weight: bolder;
+.text{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headline{
+  font-size: 45px;
 }
 
 .description{
@@ -49,45 +65,44 @@ a {
     color: #E5E7EB;
 }
 
-
-body {
-    margin: 0;
-}
-
-.sign1 button {
+.signup button{
     background-color: #3882F6;
     border-radius: 5px;
-    padding: 4px 25px;
+    padding: 6px 25px;
     color: #F9FAF8;
     font-weight: bold;
-    border-color: #3882F6;
+    border-color: lightgray;
     margin-top: 10px;
 }
 
-.text{ 
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-}
+.coverPic{
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 60%;
+ }
 
-.lowersec{
+
+.tail{
     display: flex;
     align-items: center;
-    margin-top: 70px;
-}
-
-.header.image {
-    background-color: gray;
-    width: 400px;
-    height: auto;
-    margin-left: auto;
+    margin-top: 35px;
+    gap: 30px;
 }
 
 
 
 
+.midSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    
+}
 
-.information{
+
+.midSection .title{
     text-align: center;
     font-size: 36px;
     font-weight: bolder;
@@ -95,33 +110,25 @@ body {
 
 }
 
-.middlesec{
+.heros{
     display: flex;
-    flex-direction: column;
-    gap:40px;
-    padding: 40px 15em 100px;
-    
-
+    justify-content: center;
+    gap: 30px;
+    padding:0 30px 50px;
 }
 
-.ilustration{
-    display: flex;
-    justify-content: space-between;
-
-}
-.ilustration .ils{
-    border-radius: 10px;
-    border: 4px solid #3882F6;
-    width: 7em;
-    height: 7em;
-}
-
-.ilustration p {
+.heros p {
     text-align: center ;
+    font-weight: bold;
 }
 
-.Cils{
-    width: 7em;
+img.champions{
+    width: 95%;
+    height: auto;
+    border-radius: 1px;
+}
+
+.cells{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,72 +138,93 @@ body {
 
 
 
-.quotesec{
+.quoteSection{
+    width: 100%;
     background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 300px 90px;
-
 }
 
 .quote{
+    padding: 100px;
+    font-weight: lighter;
     font-style: italic;
-    font-size: 36px;
-    color: #1F2937;
-    
+    font-size: 30px;
+    color: #1F2937; 
 }
 
 .author{
+    margin-top: 20px;
+    font-style: normal;
+    font-size: large;
     font-weight: bold;
     text-align: end;
 }
 
 
 
-.lowmiddlesec{ 
+
+
+.lowerSection{ 
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 80px;
 }
 
 
 
-.containerblue{
+.blueContainer{
+    padding: 40px;
+    width: 700px;
+    margin: 100px ;
     border-radius: 7px;
     color: #F9FAF8;
     background-color: #3882F6;
     display: flex;
     align-items: center;
-    width: 1100px;
-    height: 120px;
-    padding: 10px 120px;
-    box-sizing: border-box;
+    justify-content: center;
+}
+
+.button2{
+    margin-left: auto;
+    margin-right: 10px;
+}
+.primary{
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 
-.pritext{
+.button2 button{
+    color: #F9FAF8;
+    border-color: lightgray;
+    background-color: #3882F6;
+    border-radius: 5px;
+    padding: 6px 25px;
     font-weight: bold;
 }
 
-.lowbutton{
-    margin-left: auto;
-}
-.lowbutton button{
-    color: #F9FAF8;
-    border-color: #F9FAF8;
-    background-color: #3882F6;
-    border-radius: 5px;
-    padding: 4px 25px;
-    font-weight: 600;
-}
+
+
+
 
 .footer{
+    position: absolute;
+    width: 100%;
+    height: 20px;
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
+    gap: 25px;
     justify-content: center;
     align-items: center;
-    padding: 20px ;
+    padding: 20px 0px;
+}
+
+.copywrite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
